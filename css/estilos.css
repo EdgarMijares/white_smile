@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+@import url(https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+body {background: #1695A3;}
+
+titulo {
+	color: #FFFFFF;
+	font-family: 'Monsieur La Doulaise', cursive;
+	font-size: 80px;
+}
+.t {
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+
+	font-size: 25px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: url('../img/pattern.png');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Open Sans', Sans-Serif, Arial, Helvetica;
+}
+a{text-decoration:none;}
+
+.contenedor{
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	vertical-align: center;
+}
+.tarjeta{
+	background: white;
+	margin: 40px 0;
+	border-radius: 15px;
+	overflow: hidden;
+	z-index: 1000;
+	width: 100%;
+}
+
+/*-----------MENU ------------------*/
+.menu_bar {
+	display: none;
+}
+
+header {
+	width: 100%;
+}
+
+header nav {
+	position: fixed;
+	background: rgba(5,50,64, 0.8);
+	z-index: 1500;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	float: left;
+}
+
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+header nav ul li{
+	display: inline-block;
+	position: relative;
+}
+
+header nav ul li:hover{
+	-webkit-transition: color #14C7FF;
+	/*background: #14C7FF;*/
+}
+
+header nav ul li a {
+	color: #FFF;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+}
+
+header nav ul li .submenu:hover {
+		
+}
+
+header nav ul li .children{
+	display: none;
+}
+
+header nav ul li a span {margin-right: 10px;}
+/*--------- SLIDER BANER --------- */
+.slider_banner{
+	overflow: hidden;
+	z-index: 500;
+	position: relative;
+}
+
+.slider_banner .banner {	
+	position: relative;
+	width: 100%
+}
+
+.slider_banner .banner img {
+	vertical-align: top;
+	width: 100%;
+	position: absolute;
+	top:0;
+	left: 100%;
+}
+
+.slider_banner .flecha_banner {
+	font-size: 35px;
+	line-height: 35px;
+	color: rgba(255,255,255,.2);
+	position: absolute;
+	top:50%;
+	z-index: 1100;
+}
+
+.slider_banner .flecha_banner:hover {color: rgba(255,255,255,.5);}
+.slider_banner .anterior {left: 20px;}
+.slider_banner .siguiente {right: 20px;}
+
+
+/* INFO */
+.slider_info {
+	text-align: center;
+	overflow: hidden;
+	padding: 20px 0;
+	z-index: 1000;
+	position: relative;
+}
+
+/*Seccion info*/
+.slider_info .informacion {width: 100%;}
+
+.slider_info .informacion article{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider_info .informacion article .slide{
+	background: #FFF;
+	width: 100%;
+	left: 100%;
+	position: absolute;
+	padding: 20px 80px;
+}
+
+.slider_info .flecha-info{
+	font-size: 35px;
+	line-height: 35px;
+	color: #ACF0F2;
+	position: absolute;
+	top: 50%;
+	z-index: 1000;
+}
+
+.slider_info .flecha-info:hover { color: #1695A3;}
+.slider_info .anterior { left: 20px;}
+.slider_info .siguiente {right: 20px;}
+
+.slider_info .informacion .nombre{
+	color: #225378;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	margin-bottom: 16px;
+}
+
+.slider_info .informacion .trabajo{
+	color: #225378;
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 16px;
+}
+
+.slider_info .informacion .tel{
+	color: #1695A3;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 10;
+}
+
+.slider_info .informacion .pais{
+	color: #1695A3;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.slider_info .informacion .pais img{
+	position: relative;
+	top: 5px;
+	margin-right: 10px;
+}
+
+.slider_info .informacion .subtitulo{
+	color:#1695A3;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+
+.slider_info .informacion .texto{
+	color:#225378;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.slider_info .botones {width: 100%;}
+
+.slider_info .botones span{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 10px;
+	border-radius: 50%;
+	background: #ACF0F2;
+}
+
+.slider_info .botones .active{
+	background: #1695A3;
+}
+
+/*REDES SOCIALES*/
+.redes{
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.redes a{
+	background: #225378;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 20px;
+	padding: 14px 0;
+	color: white;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+
+.redes .facebook {background: #1769ff;}
+.redes .correo {background: #1695A3;}
+.redes .map {background: #990A00;}
