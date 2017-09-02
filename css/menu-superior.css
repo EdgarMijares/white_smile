@@ -1,0 +1,94 @@
+.menuSup {
+	top: 0;
+	border-bottom: 1px solid #959595;
+	padding: 10px 15px 10px;
+	width: 100%;
+	color: #505050;
+	font-size: 1em;
+	margin: auto;
+	width: 75%;
+}
+.menuSup div {
+	display: inline-block;
+}
+.menuSup .buttons {
+	margin-top: 10px;
+}
+.menuSup .buttons a {
+	text-decoration: none;
+	color: #505050;
+	font-size: 1em;
+	padding: 0 5px;
+	text-align: center;
+
+}
+.menuSup .buttons a:hover {
+	text-decoration: underline;
+}
+.buttons {
+	float: right;
+}
+.flags {
+	padding: 0px 10px;
+	margin-top: 2px;
+}
+.flags img {
+	margin: 0;
+	height: 24px;
+	width: 24px;
+}
+.menu_bar{
+	display: none;
+}
+@media screen and (max-width:900px) {
+	.menuSup {
+		width: auto;
+		height: 100%;
+		left: -100%;
+		margin: 0;
+		padding: 10px 5px;
+		position: fixed;
+		background: rgba(78,160,249,.6);
+		color: #FFF;
+	}
+	.menuSup span, .menuSup .buttons, .menuSup .flags {
+		display: block;
+		float: none;
+		font-size: 1.5em;
+	}
+	.menuSup .buttons {
+		padding: 50px 0;
+	}
+	.menuSup .buttons a {
+		display: block;
+		padding: 5px 0px;
+		color: #FFF;
+		border-bottom: 2px solid rgba(255,255,255,.8);
+	}
+	.menuSup .flags {
+		margin: auto;
+	}
+	.menuSup .flags img {
+		width: 32px;
+		height: 32px;
+		margin: 0 30px;
+	}
+	.menu_bar {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		z-index: 1000;
+	}
+	.menu_bar .fa-bars {
+		display: block;
+		font-weight: bold;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		color: #fff;
+	}
+	.menu_bar span {
+		float: right;
+		font-size: 1.8em;
+	}
+}
