@@ -17,4 +17,4 @@ This README would normally document whatever steps are necessary to get your app
 
 * PROGRESS SYSTEM SOFTWARE
 * Mijares Cejas Edgar Cipriano
-* Gamiz Villareal Luis Daniel
+* Gamiz Villarreal Luis Daniel
