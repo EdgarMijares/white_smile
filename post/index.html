@@ -6,38 +6,107 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="styleshseet">
+
 	<style>
-		.banderas img{
-			margin-top: 2px;
+		*{
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			box-sizing: border-box;
 		}
-		.banderas .texto{
-			padding-top: -10px;
+
+		body {
+			background: #FFF;
+			font-family: "Open Sans",Sans-serif;
+			font-size: 16px;
+			color: #FFF;
+		}
+
+		.contenedor {
+			width: 40%;
+			max-width: 1000px;
+			margin: auto;
+		}
+
+		.icon {
+			width: 40%;
+			height: 40%;
+		}
+
+		.contenedor-text {
+			display: flex;
+			margin: 100px 0;
+			border: 2px solid #FFF;
+			border-radius: 8px;
+			text-align: center;
+			padding: 20px 20px;
+		}
+
+		.espanol, .ingles {
+			display: flex;
+			border: 2px solid #FFF;
+			border-radius: 8px;
+			text-align: center;
+			padding: 20px 60px;
+			margin: 0px 12px 6px 35px;
+			background: rgba(255,255,255,.2);
+		}
+
+		@media screen and (max-width: 600px){
+			.contenedor {
+				width: 90%;
+				margin: auto;
+			}
+
+			.icon {
+				width: 70%;
+				height: 70%;
+				margin: auto;
+			}
+
+			.contenedor-text {
+				display: inline-block;
+				margin: 100px 0;
+				border: 2px solid #FFF;
+				border-radius: 8px;
+				text-align: center;
+			}
+
+			.espanol, .ingles {
+				display: inline-block;
+				border: 2px solid #FFF;
+				border-radius: 8px;
+				text-align: center;
+				background: rgba(255,255,255,.2);
+
+			}
 		}
 	</style>
 </head>
 <body style="background: #bbdefb;">
-	<header>
-		
-	</header>
-	<section class="cuerpo valign-wrapper">
-		<div class="container center-align">
-			<div class="row">
-				<div class="col s12">
-					<img src="../img/perfil.png" alt="White Smile Clinica Dental" width="30%">
-				</div>
-			</div>
-			<div class="row center-align">
-				<div class="col m3"></div>
-				<div class="col s12 m3 banderas"><a href="es"><span class="texto"><img src="../img/flags/es_mx_32.png" width="42px" alt="Bandera de Mexico"><br>ESPAÑOL</span></a></div>
-				<div class="col s12 m3 banderas"><a href="en"><img src="../img/flags/en_us_32.png" width="42px" alt="Flag USA"><span class="texto"><br>ENGLISH</span></a></div>
-				<div class="col m3"></div>
-			</div>
-			<div class="row center-align">
-				
-				
+	<div class="contenedor">
+		<div class="contenedor-text">
+			<img src="../img/perfil.png" alt="White Smile icon" class="icon">
+			<br>
+			<div class="idiomas">
+				<a href="es">
+					<div class="espanol">
+						Español
+					</div>
+				</a>
+				<br>
+				<a href="en">
+					<div class="ingles">
+						Ingles
+					</div>
+				</a>
 			</div>
 		</div>
-	</section>
+	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 </body>
