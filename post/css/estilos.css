@@ -87,11 +87,18 @@ body {
     height: 30%;
     margin-top: 10px; }
 
-  .post h4 {
-    font-size: 1.5em;
-    margin-top: 5px; }
-  .post p {
-    display: none; }
+  .post {
+    text-align: center; }
+    .post h4 {
+      display: inline-block;
+      font-size: 1.5em;
+      margin-top: 5px; }
+    .post img {
+      border-radius: 5px;
+      display: block;
+      width: 100%;
+      margin: auto;
+      height: 50%; }
 
   .backbutton {
     display: inline-block;
