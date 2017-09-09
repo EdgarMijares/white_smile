@@ -1,0 +1,73 @@
+$background: #bbdefb
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	-o-box-sizing: border-box
+	box-sizing: border-box
+		
+
+body 
+	background: $background
+	font-family: "Open Sans",Sans-serif
+	font-size: 16px
+	color: #FFF
+
+.contenedor
+	width: 80%
+	max-width: 1000px
+	margin: auto
+.menu
+	a
+		text-decoration: none
+		color: #FFF
+		display: inline-block
+		float: right
+		margin: 20px
+		border: 2px solid #FFF
+		border-radius: 8px
+		text-align: center
+		padding: 20px
+		transition: 1s all
+		background: rgba(43, 132, 207, .4)
+	a:hover
+		background: rgba(255,255,255,1)
+		border: 2px solid #2470AF
+		color: #2470AF
+.icon
+	display: inline-block
+	width: 10%
+	height: 10%
+	margin: auto
+.contenido
+	display: block
+	margin-top: 50px
+	display: inline-block
+	width: 100%
+	a
+		text-decoration: none
+		color: #FFF
+		transition: 1s all
+.post
+	border: 2px solid #FFF
+	background: rgba(43, 132, 207, .4)
+	border-radius: 5px
+	padding: 16px
+	margin: 20px 0
+	transition: 1s ease all
+	img
+		float: left
+		width: 15%
+		height: 15%
+		margin-right: 20px
+		border-radius: 40%
+.post:hover
+	background: rgba(255,255,255,1)
+	border: 2px solid #2470AF
+	color: #2470AF
+.post:after
+	content: ""
+	clear: both
+	display: table
