@@ -14,7 +14,8 @@ body
 	font-family: "Open Sans",Sans-serif
 	font-size: 16px
 	color: #FFF
-
+.backbutton
+	display: none
 .contenedor
 	width: 80%
 	max-width: 1000px
@@ -71,3 +72,27 @@ body
 	content: ""
 	clear: both
 	display: table
+@media screen and (max-width:900px)
+	.menu
+		.idioma
+			display: none
+		.icon
+			float: right
+			width: 30%
+			height: 30%
+			margin-top: 10px
+	.post
+		h4
+			font-size: 1.5em
+			margin-top: 5px
+		p
+			display: none
+	.backbutton
+		display: inline-block
+		width: 10%
+		margin-top: 20px
+		margin-left: 50px
+		a
+			text-decoration: none
+			color: #FFF
+			font-size: 2em
